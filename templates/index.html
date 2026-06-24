@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Azure Flask Web App</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="{{ url_for('static', filename='logo.png') }}"
+     alt="Logo"
+     class="logo">
+
+<h1>Azure App Service</h1>
+
+<p>Python Flask Application</p>
+
+</header>
+
+<div class="container">
+
+<h2>Welcome</h2>
+
+<p>
+
+Congratulations!
+
+Your Flask application is successfully deployed
+to Azure App Service.
+
+</p>
+
+<button onclick="showMessage()">
+
+Click Here
+
+</button>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2025 Azure Flask Demo
+
+</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+
+alert("Welcome to Azure App Service!");
+
+}
+
+</script>
+
+</body>
+
+</html>
